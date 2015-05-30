@@ -94,5 +94,3 @@ class KazakhLemmatizer(object):
         for rule in self.NOUN_SUBSTITUTION_RULES:
             forms = apply_rule(forms, rule)
         return filter_forms(forms)
-
-print(KazakhLemmatizer().lemmatize('еркіммен'))
